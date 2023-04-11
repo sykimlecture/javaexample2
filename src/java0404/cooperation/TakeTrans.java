@@ -2,6 +2,7 @@ package java0404.cooperation;
 
 public class TakeTrans {
     public static void main(String[] args) {
+        Student student = new Student();
         Student studentJames = new Student("James", 5000);
         Student studentTomas = new Student("Tomas", 5000);
 

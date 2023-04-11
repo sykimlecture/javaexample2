@@ -5,6 +5,8 @@ public class Student {
     public int grade;
     public int money;
 
+    public Student() {
+    }
     public Student(String studentName, int money) {
         this.studentName = studentName;
         this.money = money;
