@@ -4,7 +4,7 @@ public class Customer {
     private int customerId;
     private String customerName;
     protected String customerGrade;
-    private int bonusPoint;
+    protected int bonusPoint;
     double bonusRatio;
 
     public Customer() {
@@ -12,9 +12,32 @@ public class Customer {
         bonusRatio = 0.01;
     }
 
+    public Customer(int customerId, String customerName) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+        customerGrade = "SILVER";
+        bonusRatio = 0.01;
+    }
+
     public int calPrice(int price) {
         bonusPoint += price * bonusRatio;
         return price;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public String showCustomerInfo() {
