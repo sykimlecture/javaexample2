@@ -16,8 +16,8 @@ public class MemberArrayList {
     public boolean removeMember(int memberId) {
         for (int i = 0; i< arrayList.size(); i++) {
             Member member = arrayList.get(i);
-            int tempId = member.getMemberId();
-            if (tempId == memberId) {
+            // int tempId = member.getMemberId();
+            if (member.getMemberId() == memberId) {
                 arrayList.remove(i);
                 return true;
             }
